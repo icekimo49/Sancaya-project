@@ -129,8 +129,8 @@ public class Player_Movement : MonoBehaviour
             lastPressedTime = Time.time;
         }
         ///// Touch control
-       /* touchControl();
-       // arahMenghadapTouch();
+        touchControl();
+        arahMenghadapTouch();
         if (arahTouch < 0f)
         {
             transform.eulerAngles = new Vector3 (0,180,0);
@@ -145,8 +145,8 @@ public class Player_Movement : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
         }
-                    ////Lompat in Touch Control 
-                    */
+                    ////Lompat in Touch Control
+                    Debug.Log(Input.touchCount);
 
         
         
@@ -161,7 +161,7 @@ public class Player_Movement : MonoBehaviour
             return;
         }
         rb.velocity = new Vector2(horizontal*speed, rb.velocity.y);
-        //rb.velocity = new Vector2(arahTouch*speed, rb.velocity.y);
+        rb.velocity = new Vector2(arahTouch*speed, rb.velocity.y);
     }
 
 

@@ -1,0 +1,13 @@
+org.gradle.jvmargs=-Xmx**JVM_HEAP_SIZE**M
+org.gradle.parallel=true
+unityStreamingAssets=**STREAMING_ASSETS**
+**ADDITIONAL_PROPERTIES**
+
+android.enableR8=**MINIFY_WITH_R_EIGHT**
+
+org.gradle.jvmargs=-Xmx1536M \
+--add-exports=java.base/sun.nio.ch=ALL-UNNAMED \
+--add-opens=java.base/java.lang=ALL-UNNAMED \
+--add-opens=java.base/java.lang.reflect=ALL-UNNAMED \
+--add-opens=java.base/java.io=ALL-UNNAMED \
+--add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED
